@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Header -->
+  <header>
+    <div class="logo"><a href="index.html">JAY PATEL</a></div>
+    <button class="menu-toggle" aria-label="Toggle menu" aria-expanded="false">
+      <span class="bar"></span>
+      <span class="bar"></span>
+      <span class="bar"></span>
+    </button>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li class="dropdown">
+          <a href="javascript:void(0)" class="dropbtn">Bug Hunting</a>
+          <div class="dropdown-content">
+            <a href="bughunt.html">Vulnerabilities</a>
+            <a href="cvehunt.html">Hunt's CVE</a>
+          </div>
+        </li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="Education.html">Education</a></li>
+        <li class="dropdown">
+          <a href="javascript:void(0)" class="dropbtn">Certificate</a>
+          <div class="dropdown-content2">
+            <a href="cert.html">CTF Certificates</a>
+            <a href="professional-cert.html">Professional Certificates</a>
+          </div>
+        </li>
+        <li><a href="projects.html">Projects</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="hero-text">
+      <h1>
+        Hello, <br>
+        This is <span class="whoami-neon">JAY PATEL</span>, I'm a Student in Cyber Security <span
+          class="highlight22"><span id="element"></span></span>
+      </h1>
+      <div class="icons">
+        <div class="iconsgit">
+          <a href="#"><img src="images/social.png" alt="GitHub"></a>
+        </div>
+        <div class="iconsinsta">
+          <a href="#"><img src="images/instagram (1).png" alt="LinkedIn"></a>
+        </div>
+        <a href="https://in.linkedin.com/in/pateljay48"><img src="images/linkedin.png" alt="Facebook"></a>
+      </div>
+      <div class="buttons">
+        <button class="contact">Contact Me</button>
+        <a href="JAY-PATEL.pdf"><button class="resume">Get Resume</button></a>
+      </div>
+    </div>
+    <div class="code-card">
+      <div class="code-header">
+        <div class="dot red"></div>
+        <div class="dot yellow"></div>
+        <div class="dot green"></div>
+      </div>
+      <pre>
+import Hi!!!
+        
+def MYinfo():
+    bio = {
+        "name"    :  "JAY PATEL",
+        "status"  :  "Cyber Security Student",
+        "place"   :  "Anand, India",
+        "height"  :  "5.9",
+        "hobby"   :  "Play CTF"
+    }
+
+    Skill = {
+        "CyberSecurity" : ["Web PenTesting", "Android PenTesting", "Memory Forensics"],
+        "Programming"   : ["Python", "BASH", "C", "HTML", "CSS", "JS"],
+        "Database"      : ["MySQL"]
+    }
+    Create_Tools = Skill["Programming"][0:1]
+    print(Create_Tools)
+
+    social = {
+        "Linkedin"   : ["pateljay48"]
+    }
+MYinfo()
+      </pre>
+    </div>
+  </section>
+
+  <!-- Skills Section -->
+  <section id="skills">
+    <div class="skill-section">
+      <h1 class="heading"><span class="whoami-neon-skill"># Skills</span></h1>
+      <div class="skills-container">
+        <div class="skill-card">
+          <img src="images/WEB APPcopy.png" class="skill-img" alt="">
+          <div class="skill-level">98%</div>
+          <h1 class="skill-name"><span class="highlight1">WEB APP PENTESTING</span></h1>
+          <p class="skill-info">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam reprehenderit
+            perspiciatis, magnam molestias adipisci dolore culpa ut odit non accusantium esse enim voluptatum? Neque at
+            quo necessitatibus molestiae vero animi.</p>
+        </div>
+        <div class="skill-card">
+          <img src="images/Android-removebg-preview.png" class="skill-img" alt="">
+          <div class="skill-level">60%</div>
+          <h1 class="skill-name"><span class="highlight1">MOBILE APP PENTESTING</span></h1>
+          <p class="skill-info">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam reprehenderit
+            perspiciatis, magnam molestias adipisci dolore culpa ut odit non accusantium esse enim voluptatum? Neque at
+            quo necessitatibus molestiae vero animi.</p>
+        </div>
+        <div class="skill-card">
+          <img src="images/volatility-removebg-preview.png" class="skill-img" alt="">
+          <div class="skill-level">50%</div>
+          <h1 class="skill-name"><span class="highlight1">MEMORY FORENSICS</span></h1>
+          <p class="skill-info">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam reprehenderit
+            perspiciatis, magnam molestias adipisci dolore culpa ut odit non accusantium esse enim voluptatum? Neque at
+            quo necessitatibus molestiae vero animi.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>

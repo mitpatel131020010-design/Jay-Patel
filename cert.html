@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CTF Showcase</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <div class="logo"><a href="index.html">JAY PATEL</a></div>
+    <button class="menu-toggle" aria-label="Toggle menu" aria-expanded="false">
+      <span class="bar"></span>
+      <span class="bar"></span>
+      <span class="bar"></span>
+    </button>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li class="dropdown">
+          <a href="javascript:void(0)" class="dropbtn">Bug Hunting</a>
+          <div class="dropdown-content">
+            <a href="bughunt.html">Vulnerabilities</a>
+            <a href="cvehunt.html">Hunt's CVE</a>
+          </div>
+        </li>
+        <li><a href="Education.html">Education</a></li>
+        <li class="dropdown">
+          <a href="javascript:void(0)" class="dropbtn">Certificate</a>
+          <div class="dropdown-content2">
+            <a href="cert.html">CTF Certificates</a>
+            <a href="professional-cert.html">Professional Certificates</a>
+          </div>
+        </li>
+        <li><a href="projects.html">Projects</a></li>
+      </ul>
+    </nav>
+  </header>
+  <section id="aboutme">
+    <h1 class="heading">
+      <span class="whoami-neonex"># CTF Certificates</span>
+    </h1>
+    <div class="image-container">
+      <div class="info">
+        <h2 class="whoami-neon"># Huntress CTF</h2>
+        <img src="images/hunt.png" alt="Huntress CTF" class="clickable-image"
+          onclick="showImageModal(this)" />
+        <p>
+            💻 Huntress CTF Challenge 2024 Recap 🔍<br><br>
+                solving 27 out of 71 challenges. <br><br>
+                <a href="https://in.linkedin.com/in/pateljay48">pateljay48</a><br><br>
+        </p>
+        <button class="read-more-btn" data-title="# Huntress CTF" data-image="images/hunt.png"
+          data-template="huntress-template" onclick="showReadMoreModal(this)">
+          Read More
+        </button>
+
+        <template id="huntress-template">
+          <p><strong>💻 Huntress CTF Challenge 2024 Recap 🔍</strong></p>
+          <p>🚨 <strong>My Rank:</strong><br>
+            💻 Huntress CTF Challenge 2024 Recap 🔍
+                    I took on the Huntress CTF Challenge this year as a solo player, diving into a tough competition
+                    with over 7,368 players and 3,448 teams! I'm thrilled to share that I placed 553rd, solving 27 out
+                    of 71 challenges.<br><br>
+          <p>🌐 <strong>More Info:</strong><br>
+            🔗 <a href="https://in.linkedin.com/in/pateljay48" target="_blank">LinkedIn</a></p>
+        </template>
+      </div>
+    </div>
+  </section>
+
+  <div class="modal" id="imageModal">
+    <div class="modal-content">
+      <span class="close-btn" onclick="closeModal()">&times;</span>
+      <h2 id="modalTitle"></h2>
+      <img id="modalImage" src="" alt="Modal Image">
+      <div id="modalText" class="modal-scrollable"></div>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
